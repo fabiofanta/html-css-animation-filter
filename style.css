@@ -75,10 +75,27 @@
     filter: sepia(0.8);
 }
 
+.ex-8-img {
+    transition: filter 2s ease-in-out, border-radius 2s ease-in-out;
+}
+
+.ex-8-img:hover {
+    filter: sepia(0.8);
+    border-radius: 5%;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: filter 2s ease-in-out, border-radius 2s ease-in-out, transform 2s ease-in-out;
 }
+
+.ex-9-img:hover {
+    filter: sepia(0.8);
+    border-radius: 5%;
+    transform: scale(1.5);
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
