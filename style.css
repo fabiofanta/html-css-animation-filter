@@ -156,7 +156,6 @@
 
 @keyframes button-left {
     to {right:69%}
-
 }
 
 .ex-12-bottom-white, .ex-13-bottom-white {
@@ -166,4 +165,28 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white  {
+    animation: button-rotate-right 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white  {
+    animation: button-rotate-left 2s linear;
+}
+
+@keyframes button-rotate-right {
+    30% {left:80%;top: -10px}
+    45% {left:80%;top: 50px}
+    75% {left:-10%;top: 50px}
+    90% {left:-10%;top: -10px}
+    100% {left: 10%;top: -10px}
+}
+
+@keyframes button-rotate-left {
+    30% {right:80%;bottom: -10px}
+    45% {right:80%;bottom: 50px}
+    75% {right:-10%;bottom: 50px}
+    90% {right:-10%;bottom: -10px}
+    100% {right: 20%;bottom: -10px}
 }
