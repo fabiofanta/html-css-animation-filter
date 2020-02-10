@@ -87,7 +87,7 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
-    transition: filter 2s ease-in-out, border-radius 2s ease-in-out, transform 2s ease-in-out;
+    transition: filter 2s ease-in-out, border-radius 1s ease-in-out, transform 2s ease-in-out;
 }
 
 .ex-9-img:hover {
@@ -98,10 +98,18 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 1s infinite linear;
 }
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-359deg);}
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
